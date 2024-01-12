@@ -1,0 +1,52 @@
+#logo {
+    width: 500px;
+}
+
+.nav_bar {
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #402b04;
+}
+
+header {
+    background-color: #f2f2f2;
+}
+
+header nav ul {
+    text-align: right;
+    list-style: none;
+}
+
+body {
+    font-family: "acumin-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+}
+
+main {
+    background-color: black;
+}
+
+h2 {
+    color: #f3b91f;
+    text-align: center;
+}
+
+p {
+    color: #f2f2f2;
+}
+
+main div img {
+    width: 100%;
+}
+
+.social_media {
+    height: 50px;
+    float: right;
+    background-color: black;
+}
+
+footer {
+    color: #f2f2f2;
+}
