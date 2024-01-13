@@ -20,13 +20,23 @@ main {
     background-color: black;
 }
 
-h1 {
-    color: #f3b91f;
+main div h1 {
+    color: #fcc326;
     text-align: center;
+    padding: 50px;
+    font-weight: 500;
+    
+
 }
 
 p {
     color: #f2f2f2;
+}
+
+body main div p {
+    padding: 20px 2px;
+    margin: 0px 10px;
+    text-align: justify;
 }
 
 main div img {
@@ -44,13 +54,27 @@ footer {
     background-color: black;
 }
 
-footer div{
+footer div {
     background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 1rem;
 }
 
+@media only screen and (min-width: 1441px){
+    body main {
+        font-size: 200%;
+    }
+    body main h1 {
+        font-size: 300%;
+    }
+    body header nav div {
+        font-size: 120%;
+    }
 
-.barra:hover{
-    color: #f3b91f;
+    body footer section{
+        font-size: 200%;
+    }
+    
+
 }
-
-
