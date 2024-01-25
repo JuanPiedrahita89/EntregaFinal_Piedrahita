@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand w-75" href="index.html">
+                <a class="navbar-brand w-75" href="../index.html">
                 <img src="../img/logo_be_colector.png" alt="Bootstrap" width="50%" height="auto">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,12 +33,19 @@
         </nav>
     </header>
     <main>
-        <div class="texto">
+        <div class="texto content">
             <h1>DONACIONES</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, facere quibusdam eveniet modi perferendis illum vel blanditiis odit recusandae maxime, aliquam quod cupiditate unde, laborum tempora eum qui cum provident.
             </p>
+            
         </div>
-        <section class="donaciones">
+        
+        <section class="donaciones content">
+            <div class="bee-container">
+                <div class="bee">
+                    <img src="../img/bee.png" alt="abeja voladora">
+                </div>
+            </div>
             <form action="#" method="post">
                 <h2>Formulario de Donaciones</h2>
         
@@ -63,7 +70,7 @@
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
         
-                <button type="submit">Donar</button>
+                <button class="boton-donar" type="submit">Donar</button>
             </form>
         </section>
     </main>

@@ -1,0 +1,19 @@
+.boton-donar{
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 5px 9rem;
+}
+
+.boton-enviar {
+    @extend .boton-donar;
+}
+
+.boton-aliados {
+    @extend .boton-donar;
+}

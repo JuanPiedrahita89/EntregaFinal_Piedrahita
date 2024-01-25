@@ -1,3 +1,15 @@
+@mixin fuente-parrafos($family, $color){
+    font-family: $family;
+    color: $color
+
+}
+
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 body {
     font-family: "acumin-pro", sans-serif;
     font-weight: 400;
@@ -5,6 +17,7 @@ body {
     background-color: black;
     padding-top: 100px;
     width: 100%;
+    
     main {
         background-color: black;
         div {
@@ -14,15 +27,16 @@ body {
                 padding: 50px;
                 font-weight: 500;
                 transition: 1s;
+                &:hover {
+                    transform: scale(2);
+                    transition: 1s ease-in-out;
+                }
             }
 
-            h1:hover {
-                font-size: 400%;
-                transition: 1s ease-in-out;
-            }
+            
 
             p {
-                color: #f2f2f2;
+                @include fuente-parrafos(acumin-pro, #f2f2f2);
                 padding: 20px 5px;
                 margin: 0px 20px;
                 text-align: justify;
@@ -63,11 +77,11 @@ body {
 
             span {
                 display: flex;
-                justify-content: center;
+                justify-content: space-evenly;
                 flex-wrap: wrap;
-                align-items: center;
-                align-content: flex-start;
+                align-items: flex-start;
                 padding: 20px 10px;
+                
                 
 
                 .card{
@@ -138,9 +152,10 @@ body {
             background-color: black;
             margin: 0px;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            @include flex(flex, center, center );
             height: 100vh;
             color: black;
             form {
@@ -210,5 +225,29 @@ body {
             list-style: none;
             padding: 50px
         }
+        .content {
+            position: relative;
+            z-index: 1; /* Ensure content is above the bee */
+          }
+          
+          .bee-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          
+          .bee {
+            width: 50px;
+            height: 50px;
+            background-color: #ffd700; /* bee color */
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fly 5s linear infinite;
+            z-index: 2;
+          }
     }
 }

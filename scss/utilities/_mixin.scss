@@ -1,0 +1,11 @@
+@mixin fuente-parrafos($family, $color){
+    font-family: $family;
+    color: $color
+
+}
+
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

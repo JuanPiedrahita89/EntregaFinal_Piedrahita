@@ -1,3 +1,5 @@
 #carpeta de documentos
 /docs
 *.json
+node_modules
+package.json

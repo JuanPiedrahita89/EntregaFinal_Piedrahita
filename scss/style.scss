@@ -3,4 +3,13 @@
 @import 'layout/_footer.scss';
 @import 'layout/media750';
 @import 'layout/media1441';
-@import 'layout/media1700'
+@import 'layout/media1700';
+
+//Utilities
+
+@import 'utilities/extend';
+@import 'utilities/mixin';
+@import 'utilities/variables';
+
+//Components
+@import 'components/animation'

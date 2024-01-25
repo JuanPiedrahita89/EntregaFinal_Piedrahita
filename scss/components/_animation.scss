@@ -1,0 +1,14 @@
+@keyframes fly {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(50vw);
+    }
+    50% {
+      transform: translateY(-50vh);
+    }
+    75% {
+      transform: translateX(-50vw);
+    }
+  }

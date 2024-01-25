@@ -13,6 +13,12 @@ body {
                 height: 50px;
                 float: right;
                 background-color: black;
+                cursor: pointer;
+
+                transition: 1s;
+                &:hover {
+                    transform: rotate(360deg);
+                }
             }
         }
     }
