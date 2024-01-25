@@ -1,0 +1,23 @@
+@media only screen and (max-width: 750px){
+    .mision_vision {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    
+    .mision1 { 
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+    .vision1 { 
+        grid-area: 1 / 2 / 2 / 3; 
+    }
+    .mision2 { 
+        grid-area: 2 / 1 / 3 / 2; 
+    }
+    .vision2 { 
+        grid-area: 2 / 2 / 3 / 3; 
+    }
+
+}

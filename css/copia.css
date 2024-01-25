@@ -1,0 +1,164 @@
+/* .nav_bar {
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #402b04;
+} */
+
+header {
+    background-color: #f2f2f2;
+    color: #402b04;
+}
+
+header nav div div a:hover {
+    color: #402b04;
+}
+
+body {
+    font-family: "acumin-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    padding-top: 100px;
+}
+
+main {
+    background-color: black;
+}
+
+main div h1 {
+    color: #fcc326;
+    text-align: center;
+    padding: 50px;
+    font-weight: 500;
+    transition: 1s;
+}
+
+main div h1:hover {
+    font-size: 400%;
+    transition: 1s ease-in-out;
+    
+}
+
+p {
+    color: #f2f2f2;
+}
+
+body main div p {
+    padding: 20px 2px;
+    margin: 0px 10px;
+    text-align: justify;
+}
+
+.mision_vision {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 1rem;
+    border: #f2f2f2 solid 1px;
+    margin: 10px;
+    padding: 20px;
+
+}
+    
+.mision1 { 
+    grid-area: 1 / 1 / 2 / 3; 
+}
+.vision1 { 
+    grid-area: 1 / 4 / 2 / 6; 
+}
+.mision2 { 
+    grid-area: 2 / 1 / 3 / 3; 
+}
+.vision2 { 
+    grid-area: 2 / 4 / 3 / 6; 
+}
+
+body main div section {
+    margin-bottom: 50px;
+}
+
+body main h2 {
+    color: #f2f2f2;
+    text-align: center;
+}
+
+body main ul {
+    color: #f2f2f2;
+    text-align: center;
+    list-style: none;
+    padding: 50px
+}
+
+main div img {
+    width: 100%;
+}
+
+/* main div img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+} */
+
+
+.social_media {
+    height: 50px;
+    float: right;
+    background-color: black;
+}
+
+footer {
+    color: #f2f2f2;
+    background-color: black;
+}
+
+footer div {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 1rem;
+}
+
+@media only screen and (min-width: 1441px){
+    body main {
+        font-size: 200%;
+    }
+    body main h1 {
+        font-size: 300%;
+    }
+    body header nav div {
+        font-size: 120%;
+    }
+
+    body footer section{
+        font-size: 200%;
+    }
+    
+
+}
+
+@media only screen and (max-width: 750px){
+    .mision_vision {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    
+    .mision1 { 
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+    .vision1 { 
+        grid-area: 1 / 2 / 2 / 3; 
+    }
+    .mision2 { 
+        grid-area: 2 / 1 / 3 / 2; 
+    }
+    .vision2 { 
+        grid-area: 2 / 2 / 3 / 3; 
+    }
+
+}
