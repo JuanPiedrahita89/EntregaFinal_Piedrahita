@@ -5,41 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/rni8ftf.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>BeColector | DONACIONES</title>
 </head>
 <body>
     <header>
-        <img src="../img/logo_be_colector_2.png" alt="logo de be bolector" id="logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html" class="nav_bar">INICIO</a>
-                </li>
-                <li>
-                    <a href="quienes_somos.html" class="nav_bar">QUIENES SOMOS?</a>
-                </li>
-                <li>
-                    <a href="que_hacemos.html" class="nav_bar">QUE HACEMOS?</a>
-                </li>
-                <li>
-                    <a href="donaciones.html" class="nav_bar">DONACIONES</a>
-                </li>
-                <li>
-                    <a href="aliados.html" class="nav_bar">ALIADOS</a>
-                </li>
-                <li>
-                    <a href="contacto.html" class="nav_bar">CONTACTO</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand w-75" href="index.html">
+                <img src="../img/logo_be_colector.png" alt="Bootstrap" width="50%" height="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav fw-bold ">
+                    <a class="nav-link text-center d-flex align-items-center" aria-current="page" href="../index.html">INICIO</a>
+                    <a class="nav-link text-center d-flex align-items-center" href="quienes_somos.html">QUIENES SOMOS?</a>
+                    <a class="nav-link text-center d-flex align-items-center" href="que_hacemos.html">QUE HACEMOS?</a>
+                    <a class="nav-link active text-center d-flex align-items-center" href="donaciones.html">DONACIONES</a>
+                    <a class="nav-link text-center d-flex align-items-center" href="aliados.html">ALIADOS</a>
+                    <a class="nav-link text-center d-flex align-items-center" href="contacto.html">CONTACTO</a>
+                    
+                </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <div>
-            <h2>DONACIONES</h2>
+        <div class="texto">
+            <h1>DONACIONES</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, facere quibusdam eveniet modi perferendis illum vel blanditiis odit recusandae maxime, aliquam quod cupiditate unde, laborum tempora eum qui cum provident.
             </p>
-            
         </div>
+        <section class="donaciones">
+            <form action="#" method="post">
+                <h2>Formulario de Donaciones</h2>
+        
+                <input type="radio" id="donacion1" name="donacion" value="1">
+                <label for="donacion1" class="btn">$1</label>
+        
+                <input type="radio" id="donacion5" name="donacion" value="5">
+                <label for="donacion5" class="btn">$5</label>
+        
+                <input type="radio" id="donacion10" name="donacion" value="10">
+                <label for="donacion10" class="btn">$10</label>
+        
+                <input type="radio" id="donacion25" name="donacion" value="25">
+                <label for="donacion25" class="btn">$25</label>
+        
+                <input type="radio" id="donacion50" name="donacion" value="50">
+                <label for="donacion50" class="btn">$50</label>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+                <button type="submit">Donar</button>
+            </form>
+        </section>
     </main>
     <footer>
         <section>
@@ -48,7 +74,7 @@
                     BARRANQUILLA-COLOMBIA
                 </li>
                 <li>
-                    be-colector@gmail.com
+                    <a href="mailto:be-colector@gmail.com">be-colector@gmail.com</a>
                 </li>
                 <li>
                     (+57) 123-456-7890
@@ -56,12 +82,12 @@
             </ul>
         </section>
         <div>
-            <a href="https://twitter.com/home"><img src="../img/x.jpg" alt="twitter o X logo" class="social_media"></a>
+            <a href="https://twitter.com/home"><img src="../img/x.png" alt="twitter o X logo" class="social_media"></a>
             <a href="https://www.facebook.com/"><img src="../img/facebook-white.png" alt="logo facebook" class="social_media"></a>
-            <a href="https://www.instagram.com/"><img src="../img/insta-white.png" alt="logo instagram" class="social_media"></a>
-            <a href="https://www.whatsapp.com/"><img src="../img/whatsapp-white.webp" alt="logo whatsapp" class="social_media"></a>
+            <a href="https://www.instagram.com/"><img src="../img/insta.png" alt="logo instagram" class="social_media"></a>
+            <a href="https://www.whatsapp.com/"><img src="../img/whatsapp.png" alt="logo whatsapp" class="social_media"></a>
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

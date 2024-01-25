@@ -5,40 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/rni8ftf.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>BeColector | CONTACTO</title>
 </head>
 <body>
     <header>
-        <img src="../img/logo_be_colector_2.png" alt="logo de be bolector" id="logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html" class="nav_bar">INICIO</a>
-                </li>
-                <li>
-                    <a href="quienes_somos.html" class="nav_bar">QUIENES SOMOS?</a>
-                </li>
-                <li>
-                    <a href="que_hacemos.html" class="nav_bar">QUE HACEMOS?</a>
-                </li>
-                <li>
-                    <a href="donaciones.html" class="nav_bar">DONACIONES</a>
-                </li>
-                <li>
-                    <a href="aliados.html" class="nav_bar">ALIADOS</a>
-                </li>
-                <li>
-                    <a href="contacto.html" class="nav_bar">CONTACTO</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand w-75" href="index.html">
+                <img src="../img/logo_be_colector.png" alt="Bootstrap" width="50%" height="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav fw-bold ">
+                    <a class="nav-link text-center d-flex align-items-center" aria-current="page" href="../index.html">INICIO</a>
+                    <a class="nav-link text-center d-flex align-items-center" href="quienes_somos.html">QUIENES SOMOS?</a>
+                    <a class="nav-link text-center d-flex align-items-center" href="que_hacemos.html">QUE HACEMOS?</a>
+                    <a class="nav-link text-center d-flex align-items-center" href="donaciones.html">DONACIONES</a>
+                    <a class="nav-link text-center d-flex align-items-center" href="aliados.html">ALIADOS</a>
+                    <a class="nav-link active text-center d-flex align-items-center" href="contacto.html">CONTACTO</a>
+                    
+                </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <div>
-            <h2>CONTACTO</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, facere quibusdam eveniet modi perferendis illum vel blanditiis odit recusandae maxime, aliquam quod cupiditate unde, laborum tempora eum qui cum provident.
+            <h1>CONTACTO</h1>
+            <p>Quieres ayudar a tu colmena? Aqui puedes encontrar nuestra informacion de contacto o si prefieres, dejanos tu informacion y nosotros nos pondremos encontacto contigo.
             </p>
             
+        </div>
+        <div class="formulario-container">
+            <section class="formulario-item">
+                <h2>Si quieres que te contactemos...</h2>
+                    <form action="#" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                        <button type="submit">Enviar</button>
+                    </form>
+            </section>
+            <span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.3749943476378!2d-74.81045088767793!3d11.010465854784485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42da33b4aba45%3A0x43418ec0aa738842!2sParque%20El%20Golf!5e0!3m2!1sen!2sco!4v1706208665185!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </span>
         </div>
     </main>
     <footer>
@@ -48,7 +73,7 @@
                     BARRANQUILLA-COLOMBIA
                 </li>
                 <li>
-                    be-colector@gmail.com
+                    <a href="mailto:be-colector@gmail.com">be-colector@gmail.com</a>
                 </li>
                 <li>
                     (+57) 123-456-7890
@@ -56,12 +81,12 @@
             </ul>
         </section>
         <div>
-            <a href="https://twitter.com/home"><img src="../img/x.jpg" alt="twitter o X logo" class="social_media"></a>
+            <a href="https://twitter.com/home"><img src="../img/x.png" alt="twitter o X logo" class="social_media"></a>
             <a href="https://www.facebook.com/"><img src="../img/facebook-white.png" alt="logo facebook" class="social_media"></a>
-            <a href="https://www.instagram.com/"><img src="../img/insta-white.png" alt="logo instagram" class="social_media"></a>
-            <a href="https://www.whatsapp.com/"><img src="../img/whatsapp-white.webp" alt="logo whatsapp" class="social_media"></a>
+            <a href="https://www.instagram.com/"><img src="../img/insta.png" alt="logo instagram" class="social_media"></a>
+            <a href="https://www.whatsapp.com/"><img src="../img/whatsapp.png" alt="logo whatsapp" class="social_media"></a>
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -12,6 +12,7 @@ body {
   font-style: normal;
   background-color: black;
   padding-top: 100px;
+  width: 100%;
 }
 body main {
   background-color: black;
@@ -29,8 +30,8 @@ body main div h1:hover {
 }
 body main div p {
   color: #f2f2f2;
-  padding: 20px 2px;
-  margin: 0px 10px;
+  padding: 20px 5px;
+  margin: 0px 20px;
   text-align: justify;
 }
 body main div .mision_vision {
@@ -61,9 +62,137 @@ body main div .vision2 {
 body main div img {
   width: 100%;
 }
+body main div span {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  padding: 20px 10px;
+}
+body main div span .card {
+  margin: 20px 20px;
+}
+body main div span .card h5 {
+  font-weight: 700;
+}
+body main div span .card p {
+  color: black;
+  font-size: 1rem;
+}
+body main div span iframe {
+  margin: 0px 50px;
+  flex-wrap: wrap;
+}
+body main div form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+body main div form label {
+  display: block;
+  margin-bottom: 8px;
+}
+body main div form input, body main div form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+body main div form button {
+  background-color: #fcc326;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body main .formulario-container .formulario-item {
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-bottom: 100px;
+}
+body main .formulario-container .formulario-item h2 {
+  color: #fcc326;
+  font-weight: 500;
+}
+body main section {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  margin: 0px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: black;
+}
+body main section form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+}
+body main section form h2 {
+  color: black;
+}
+body main section form label {
+  display: block;
+  margin-bottom: 8px;
+}
+body main section form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+body main section form label.btn {
+  background-color: #fcc326;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px 10px;
+}
+body main section form input:checked + label.btn {
+  background-color: #45a049;
+}
+body main section form button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 5px 9rem;
+}
+body main .donaciones {
+  height: fit-content;
+  padding: 20px;
+}
+body main .donaciones form {
+  margin: auto;
+}
 body main h2 {
   color: #f2f2f2;
   text-align: center;
+  padding-bottom: 15px;
 }
 body main ul {
   color: #f2f2f2;
@@ -108,6 +237,24 @@ body footer div .social_media {
   .vision2 {
     grid-area: 2/2/3/3;
   }
+  body {
+    width: fit-content;
+  }
+  body main div span iframe {
+    margin: 0;
+  }
+  body main div .aliados {
+    margin: 0;
+  }
+  body main div .texto {
+    display: flex;
+    text-align: justify;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  body footer div a {
+    paading-right: 5px;
+  }
 }
 @media only screen and (min-width: 1441px) {
   body main {
@@ -116,11 +263,19 @@ body footer div .social_media {
   body main h1 {
     font-size: 300%;
   }
+  body main .formulario-container .formulario-item {
+    font-size: 20px;
+  }
   body header nav div {
     font-size: 120%;
   }
   body footer section {
     font-size: 200%;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  body header {
+    height: 50px;
   }
 }
 

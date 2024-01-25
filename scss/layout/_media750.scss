@@ -19,5 +19,35 @@
     .vision2 { 
         grid-area: 2 / 2 / 3 / 3; 
     }
-
+    body{
+        width: fit-content;
+        main{
+            div{
+                span{
+                    iframe {
+                        margin: 0;
+                    }
+                }
+                .aliados{
+                    margin: 0;
+                }
+                .texto {
+                    display: flex;
+                    text-align: justify;
+                    margin-left: 1px;
+                    margin-right: 1px;
+                    
+                }
+            }
+        }
+        footer{
+            div{
+                a{
+                    padding-right: 5px;
+                    
+                }
+            }
+            
+        }
+    }
 }

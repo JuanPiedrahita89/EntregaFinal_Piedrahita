@@ -1,16 +1,28 @@
 @media only screen and (min-width: 1441px){
-    body main {
-        font-size: 200%;
-    }
-    body main h1 {
-        font-size: 300%;
-    }
-    body header nav div {
-        font-size: 120%;
-    }
-
-    body footer section{
-        font-size: 200%;
+    body{
+        main{
+            font-size: 200%;
+            h1{
+                font-size: 300%;
+            }
+            .formulario-container{
+                .formulario-item {
+                    font-size: 20px;
+                }
+            }
+        }
+        header{
+            nav{
+                div{
+                    font-size: 120%;
+                }
+            }
+        }
+        footer{
+            section{
+                font-size: 200%;
+            }
+        }
     }
     
 
